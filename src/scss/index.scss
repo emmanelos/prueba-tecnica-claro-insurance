@@ -1,0 +1,163 @@
+@import "reformat/reset";
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: system-ui;
+ font-size: var(--bodyFontSize);
+}
+
+.App {
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(#5ED4DC, #042340);
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+ height: 80%;
+ width: 70%;
+}
+
+.arcVersion {
+ background-color: #061936;
+ align-self: flex-end;
+ height: 2rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 75%;
+ font-size: .7rem;
+
+ &__link {
+  color: #d7e0e7;
+ }
+
+ &__linkA {
+  color: #19C7CF;
+  display: inline;
+ }
+}
+
+.login {
+ display: flex;
+ height: 100%;
+ width: 100%;
+}
+
+.arcLogo {
+ background-color: #00275B;
+ color: #19C7CF;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 2.5rem;
+ width: 35%;
+}
+
+.form {
+ background-color: white;
+ color: black;
+ width: 65%;
+ display: flex;
+ flex-direction: column;
+ padding: 5%;
+
+ &__title {
+  position: relative;
+  top: 5%;
+  font-size: .8rem;
+
+  &__welcome {
+   font-size: 1.2rem;
+   color: #00275B;
+  }
+ }
+
+ &__body {
+  margin: auto 0;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ &__inputs {
+  padding-bottom: 12%;
+ }
+
+ &__inputContainer:nth-child(1) {
+  padding-bottom: 5%;
+ }
+
+ &__label {
+  font-size: .7rem;
+  color: grey;
+ }
+
+ &__input {
+  border: none;
+  width: 100%;
+  background-color: rgb(232 239 255);
+  margin-top: 1.5%;
+
+  outline: none;
+ }
+
+ &__underline {
+  padding-top: 1%;
+  border-bottom: .1rem solid rgb(218 218 216);
+ }
+
+ &__rememberMe {
+  display: flex;
+  font-size: .9rem;
+  padding-bottom: 12%;
+ }
+
+ &__labelRememberMe {
+  padding-right: .5rem;
+ }
+
+ &__forgotPassword {
+  margin-left: auto;
+  color: grey;
+ }
+
+ &__privacyPolicy {
+  font-size: .6rem;
+  padding-bottom: 5%;
+  line-height: 1.5;
+ }
+
+ &__privacyPolicyLink {
+  color: rgb(12 194 205);
+ }
+
+ &__button {
+  background-color: rgb(12 194 205);
+  width: 90%;
+  border: none;
+  color: white;
+  height: 15%;
+  margin-left: auto;
+ }
+}
+
+.singUp {
+ color: #abbfcc;
+ align-self: flex-end;
+ padding-top: 2.5%;
+
+ &__link {
+  color: rgb(114 102 52);
+ }
+}
